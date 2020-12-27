@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="8b65bc09-8264-46fe-85ee-dc6a322514d0" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="new-yearFlow" doc:id="47b76f83-815c-431d-9a0c-3c3176a859ad" >
+	<flow name="new-year-vibes" doc:id="47b76f83-815c-431d-9a0c-3c3176a859ad" >
 		<http:listener doc:name="Listener" doc:id="1c47ece2-135e-4b38-92e3-d58e7a4f1b30" config-ref="HTTP_Listener_config" path="/wish"/>
 		<logger level="INFO" doc:name="Logger" doc:id="ccec41f6-2f40-407e-8842-9e93041b65aa" message='"Have Patience"'/>
 		<set-payload value='#["Wishing you a Happy New Year !"]' doc:name="Set Payload" doc:id="f13e58e5-7e71-484c-afb3-d4074e713295" />
