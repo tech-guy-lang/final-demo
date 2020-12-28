@@ -30,8 +30,8 @@
 				<username>integrations123</username>
 				<password>Programming@24</password>
 				<environment>Sandbox</environment>
-				<worker>1</worker>
-				<workerType>micro</workerType>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
 				<applicationName>Final-Demo</applicationName>
 				<muleVersion>4.2.2</muleVersion>
 				</cloudHubDeployment>
